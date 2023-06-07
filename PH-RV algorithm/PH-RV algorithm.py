@@ -85,7 +85,7 @@ plt.xlabel('Date')
 plt.title('Homology Changes')
 plt.show()
 
-# Save data
+# Save data to be used with your RV forecasting model
 Data={"Date": df_close.index[w:n+w],
       "wasserstein_dists":wasserstein_dists.reshape(len(wasserstein_dists))}
 df=pd.DataFrame(data=Data)
